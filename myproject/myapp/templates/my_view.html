@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Processing Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Image Processing Hub</h1>
+      <p class="text-center">Upload an image and choose a processing option.</p>
+      <form id="image-form" class="text-center">
+        <div class="mb-3">
+          <label for="image-upload" class="form-label">Upload an image:</label>
+          <input
+            type="file"
+            class="form-control"
+            id="image-upload"
+            name="image"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="processing-option" class="form-label"
+            >Choose a processing option:</label
+          >
+          <select class="form-select" id="processing-option">
+            <option value="sharpen">Image Sharpening</option>
+            <option value="array">Convert to Array</option>
+            <option value="resize">Image Resizing</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="process-button">
+          Process
+        </button>
+      </form>
+      <div id="processed-image" class="mt-5 text-center">
+        <!-- Display the processed image here -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-aohbU8R8iABf7zjc5fGusa93Dgh2j5q5lZ6a5R6LRtb0of5P7D1E05me9zT5CzN3j"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
