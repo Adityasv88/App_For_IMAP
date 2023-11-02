@@ -1,0 +1,16 @@
+/* Add your CSS styles here */
+/* For example: */
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#processed-image img {
+    max-width: 100%;
+    height: auto;
+}
